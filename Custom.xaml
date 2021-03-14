@@ -1,0 +1,48 @@
+
+
+<local:MyCard Title="欢迎来到纸箱工艺~" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,2"
+                   Text="问问题前请先看看群公告哦" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                   Text="如果你喜欢纸箱，可以点击下方链接为纸箱评分或赞助纸箱" />
+        <StackPanel Orientation="Horizontal">
+            <local:MyButton Margin="0,0,20,2" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                   Text="打开 纸箱宣传帖" Tag="链接-https://www.mcbbs.net/thread-1124469-1-1.html" />
+            <local:MyButton Margin="0,0,20,2" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="打开 纸箱赞助指南" Tag="链接-https://docs.qq.com/doc/DVVJid0lCdndTUnV3" />
+        </StackPanel>
+    </StackPanel>
+</local:MyCard>
+
+<!-- 
+
+常见的属性列表
+
+通用属性：
+ - Width、Height：设置宽度与高度
+ - ToolTip：设置鼠标指向时的提示文本
+ - Foreground：调整前景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
+ - Background：调整背景颜色（使用类似 Background="{DynamicResource ColorBrush5}" 的格式以调用 PCL2 当前的主题颜色，修改末尾的数字编号以改变颜色浓度）
+ - Margin：调整外边距（格式为 左,上,右,下。例如 Margin="0,0,0,2" 即为 2 单位的下边距）
+ - HorizontalAlignment：设置对齐方式（Left、Center、Right）
+
+TextBlock 属性：
+ - Text：设置显示的文本（&#xA; 代表换行）
+ - TextWrapping：开启自动换行
+ - FontSize：设置字号
+
+local:MyButton 属性：
+ - Text：设置显示的文本
+ - Padding：设置内边距，格式与 Margin 一致
+ - ColorType：设置颜色主题（Normal、Highlight、Red 三选一，默认为 Normal）
+ - Tag：设置点击时的操作
+     Tag="启动-1.12.2"：点击时启用当前 Minecraft 文件夹下的 1.12.2 版本，如果没有则弹出错误提示
+	 Tag="链接-https://www.baidu.com/"：点击时打开网页
+
+local:MyCard 属性：
+ - Title：设置显示的标题文本
+ - CanSwap：这张卡片是否可以折叠，True 为是，False 为否
+ - IsSwaped：这张卡片是否默认折叠，要求 CanSwap 必须为 True
+
+-->
